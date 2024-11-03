@@ -373,8 +373,8 @@ button:active {
   }
 }
 
-/* Media Query: iPhone 13 */
-@media screen and (max-width: 376px) {
+/* Media Query: iPhone 12 and iPhone 13 */
+@media screen and (max-width: 375px) {
   .best-score {
     left: 15px; /* Adjust positioning to be more responsive */
     font-size: 0.8rem; /* Scale down font size */
@@ -405,6 +405,12 @@ button:active {
     margin: 0 10px; /* Adjust margin for smaller screens */
   }
 }
+
+/* Media Query: iPhone 13 */
+@media screen and (max-width: 376px) {
+  /* Additional styles specific to iPhone 13 can go here if needed */
+}
+
 /* Media Query: Mobile */
 @media screen and (max-width: 600px) {
   .header {
