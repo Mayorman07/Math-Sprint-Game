@@ -63,7 +63,7 @@ function getSavedBestScores(){
 }
 
 function celebrateNewHighScore() {
-  const celebrationSound = new Audio('/sounds/endgame.mp3');
+  const celebrationSound = new Audio('./sounds/endgame.mp3');
 
   // Trigger confetti
   confetti({
