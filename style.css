@@ -303,6 +303,8 @@ button:active {
 .modal-content h2 {
   color: #4CAF50; /* Green color for the heading */
   font-family: 'Arial', sans-serif; /* Font styling */
+  text-align: center; /* Center the text */
+  margin: 0; /* Remove any default margin */
 }
 
 /* Close Button */
