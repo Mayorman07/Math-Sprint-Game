@@ -20,11 +20,8 @@ body {
   height: 100vh;
   background: #f8f8f8;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23161619' fill-opacity='0.12'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
-  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Ccircle cx='10' cy='10' r='4' fill='%23161616'/%3E%3Ccircle cx='30' cy='30' r='4' fill='%23161616'/%3E%3Ccircle cx='50' cy='10' r='4' fill='%23161616'/%3E%3Ccircle cx='70' cy='30' r='4' fill='%23161616'/%3E%3Ccircle cx='90' cy='10' r='4' fill='%23161616'/%3E%3Ccircle cx='110' cy='30' r='4' fill='%23161616'/%3E%3Ccircle cx='130' cy='10' r='4' fill='%23161616'/%3E%3Ccircle cx='150' cy='30' r='4' fill='%23161616'/%3E%3Ccircle cx='170' cy='10' r='4' fill='%23161616'/%3E%3Ccircle cx='190' cy='30' r='4' fill='%23161616'/%3E%3C/svg%3E"); */
   background-color: rgb(249, 247, 247); /* Dark base color with transparency
   /* background-size: 20px 20px; */
-  /* Size of the pattern */
-
 }
 
 
@@ -264,16 +261,7 @@ button:active {
   color: var(--danger);
 }
 
-/* Media Query: Laptop */
-@media screen and (max-width: 1800px) {
-  .game-container {
-    margin-top: 35px;
-  }
 
-  .selected-item {
-    top: 380px;
-  }
-}
 /* Modal Background */
 .modal {
   display: none; /* Hidden by default */
@@ -303,8 +291,8 @@ button:active {
 .modal-content h2 {
   color: #4CAF50; /* Green color for the heading */
   font-family: 'Arial', sans-serif; /* Font styling */
-  text-align: center; /* Center the text */
-  margin: 0; /* Remove any default margin */
+      text-align: center; /* Center the text */
+    margin: 0; /* Remove any default margin */
 }
 
 /* Close Button */
@@ -330,6 +318,16 @@ button:active {
   text-align: center; /* Centered text */
 }
 
+/* Media Query: Laptop */
+@media screen and (max-width: 1800px) {
+  .game-container {
+    margin-top: 35px;
+  }
+
+  .selected-item {
+    top: 380px;
+  }
+}
 
 
 /* Media Query: Large Smartphone (Vertical) */
@@ -375,9 +373,61 @@ button:active {
   }
 }
 
-/* Media Query: iPhone */
+/* Media Query: iPhone 13 */
 @media screen and (max-width: 376px) {
   .best-score {
-    left: 232px;
+    left: 15px; /* Adjust positioning to be more responsive */
+    font-size: 0.8rem; /* Scale down font size */
+  }
+
+  .header {
+    font-size: 1.5rem; /* Scale down header font size */
+  }
+
+  label {
+    font-size: 0.8rem; /* Scale down label font size */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Scale down title font size */
+  }
+
+  button {
+    font-size: 0.8rem; /* Scale down button font size */
+  }
+
+  .final-time {
+    font-size: 3rem; /* Scale down final time font size */
+  }
+
+  .item {
+    height: 60px; /* Reduce item height for better fit */
+    margin: 0 10px; /* Adjust margin for smaller screens */
+  }
+}
+/* Media Query: Mobile */
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 1.4rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  .best-score span:last-child {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .final-time {
+    font-size: 4rem;
   }
 }
